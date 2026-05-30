@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: #C5BEB4;
+    color: #2D3937;
+    padding: 40px;
+}
+
+/* TITULO */
+
+h1{
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 42px;
+    font-weight: 700;
+    color: #2D3937;
+}
+
+/* FORMULARIO */
+
+form{
+    width: 400px;
+    background: #FFFFFF;
+    margin: auto;
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* INPUTS */
+
+input,
+select{
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #AFA797;
+    border-radius: 14px;
+    outline: none;
+    background: #f9f9f9;
+    font-size: 15px;
+    color: #2D3937;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus{
+    border-color: #5A6E60;
+    background: #FFFFFF;
+}
+
+/* BOTON PRINCIPAL */
+
+button{
+    width: 100%;
+    padding: 15px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 14px;
+    background: #2D3937;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #5A6E60;
+}
+
+/* TABLA */
+
+table{
+    width: 90%;
+    margin: 45px auto;
+    border-collapse: collapse;
+    background: #FFFFFF;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ENCABEZADOS */
+
+th{
+    background: #2D3937;
+    color: white;
+    padding: 18px;
+    font-weight: 600;
+}
+
+/* CELDAS */
+
+td{
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid #ececec;
+}
+
+/* LINKS */
+
+a{
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* ELIMINAR */
+
+.eliminar{
+    background: #EFB1A9;
+    color: #000000;
+}
+
+.eliminar:hover{
+    background: #d99990;
+}
+
+/* EDITAR */
+
+.editar{
+    background: #5A6E60;
+}
+
+.editar:hover{
+    background: #46564b;
+}
+
+/* PAGAR */
+
+.pagar{
+    background: #2D3937;
+}
+
+.pagar:hover{
+    background: #000000;
+}
+
+/* MENSAJE */
+
+h2{
+    text-align: center;
+    margin-top: 30px;
+    color: #5A6E60;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    body{
+        padding: 20px;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    table{
+        width: 100%;
+        font-size: 13px;
+    }
+
+    th, td{
+        padding: 10px;
+    }
+
+}
+#paypal{
+    background: #f7fbff;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #cfe8ff;
+}
