@@ -1,12 +1,14 @@
 <?php
+// eliminar.php
+require_once 'conexion.php';
 
-include("conexion.php");
+$id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 
-$id = $_GET['id'];
+if ($id) {
+    $sql = "DELETE FROM productos WHERE id = :id";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([':id' => $id]);
+}
 
-mysqli_query($conexion,
-"DELETE FROM productos WHERE id='$id'");
-
-header("Location:index.php");
-
-?>
+header("Location: index.php");
+exit;
